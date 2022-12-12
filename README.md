@@ -4,6 +4,6 @@
 
 - Make apps using SwiftUI
 
-- Learning with credo.academy
+- Learning with www.kodeco.com
 
 - Not only follow the course, but understand lines of code
