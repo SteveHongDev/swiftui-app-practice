@@ -11,6 +11,8 @@
 		495A719E2966A373001CDA4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A719D2966A373001CDA4E /* ContentView.swift */; };
 		495A71A02966A374001CDA4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495A719F2966A374001CDA4E /* Assets.xcassets */; };
 		495A71A32966A374001CDA4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495A71A22966A374001CDA4E /* Preview Assets.xcassets */; };
+		495A71AE2966ADA0001CDA4E /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A71AD2966ADA0001CDA4E /* InfoPanelView.swift */; };
+		495A71B02966B352001CDA4E /* ControlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495A71AF2966B352001CDA4E /* ControlImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		495A719D2966A373001CDA4E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		495A719F2966A374001CDA4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		495A71A22966A374001CDA4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		495A71AD2966ADA0001CDA4E /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		495A71AF2966B352001CDA4E /* ControlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlImageView.swift; sourceTree = "<group>"; };
+		495A71B12966B5DB001CDA4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +56,11 @@
 		495A719A2966A373001CDA4E /* Pinch */ = {
 			isa = PBXGroup;
 			children = (
+				495A71B12966B5DB001CDA4E /* Info.plist */,
+				495A719B2966A373001CDA4E /* PinchApp.swift */,
 				495A71AC2966A50A001CDA4E /* Data */,
 				495A71AB2966A504001CDA4E /* Model */,
 				495A71AA2966A4F9001CDA4E /* View */,
-				495A719B2966A373001CDA4E /* PinchApp.swift */,
 				495A71A92966A4E4001CDA4E /* Screen */,
 				495A719F2966A374001CDA4E /* Assets.xcassets */,
 				495A71A12966A374001CDA4E /* Preview Content */,
@@ -81,6 +87,8 @@
 		495A71AA2966A4F9001CDA4E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				495A71AD2966ADA0001CDA4E /* InfoPanelView.swift */,
+				495A71AF2966B352001CDA4E /* ControlImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,8 +177,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495A71B02966B352001CDA4E /* ControlImageView.swift in Sources */,
 				495A719E2966A373001CDA4E /* ContentView.swift in Sources */,
 				495A719C2966A373001CDA4E /* PinchApp.swift in Sources */,
+				495A71AE2966ADA0001CDA4E /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +312,7 @@
 				DEVELOPMENT_TEAM = X726R6A26M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Pinch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -330,7 +340,7 @@
 				DEVELOPMENT_TEAM = X726R6A26M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = Pinch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
