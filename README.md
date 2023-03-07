@@ -16,3 +16,5 @@
   - Use maching learning (CreateML, CoreML)
 - Chapter 5: WordScramble
   - Build a letter rearranging game with List
+- Chapter 6: Animation
+  - Spruce up your UI with springs, bounces, and more
