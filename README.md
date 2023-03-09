@@ -20,3 +20,5 @@
   - Spruce up your UI with springs, bounces, and more
 - Chapter 7: iExpense
   - Bring in a second view with this expense tracking app
+- Chapter 8: MoonShot
+  - Teach users about space history with scroll views, Codable, and more
