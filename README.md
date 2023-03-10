@@ -22,3 +22,6 @@
   - Bring in a second view with this expense tracking app
 - Chapter 8: MoonShot
   - Teach users about space history with scroll views, Codable, and more
+- Chapter 9: Drawing
+  - Use shapes, paths, colors, and more to create custom art for app
+
