@@ -24,4 +24,5 @@
   - Teach users about space history with scroll views, Codable, and more
 - Chapter 9: Drawing
   - Use shapes, paths, colors, and more to create custom art for app
-
+- Chapter 10: Cupcake Corner
+  - Build an app that sends and receives JSON from the internet
