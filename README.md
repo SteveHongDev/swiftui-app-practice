@@ -26,3 +26,7 @@
   - Use shapes, paths, colors, and more to create custom art for app
 - Chapter 10: Cupcake Corner
   - Build an app that sends and receives JSON from the internet
+- Chapter 11: Bookworm
+  - Use Core Data to build an app that tracks books you like
+- Chapter 12: Core Data
+  - Take an in-depth tour of how SwiftUI and Core Data work together
