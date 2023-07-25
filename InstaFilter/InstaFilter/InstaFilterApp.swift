@@ -1,14 +1,14 @@
 //
-//  InstaFilterApp.swift
-//  InstaFilter
+//  InstafilterApp.swift
+//  Instafilter
 //
-//  Created by Steve Hong on 2023/05/18.
+//  Created by 홍성범 on 7/25/23.
 //
 
 import SwiftUI
 
 @main
-struct InstaFilterApp: App {
+struct InstafilterApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

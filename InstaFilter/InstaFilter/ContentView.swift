@@ -1,34 +1,43 @@
 //
 //  ContentView.swift
-//  InstaFilter
+//  Instafilter
 //
-//  Created by Steve Hong on 2023/05/18.
+//  Created by 홍성범 on 7/25/23.
 //
 
 import SwiftUI
+import CoreImage
+import CoreImage.CIFilterBuiltins
 
 struct ContentView: View {
-    @State private var blurAmount = 0.0
+    @State private var image: Image?
+    @State private var inputImage: UIImage?
+    @State private var showingImagePicker = false
     
     var body: some View {
         VStack {
-            Text("Hello, World!")
-                .blur(radius: blurAmount)
+            image?
+                .resizable()
+                .scaledToFit()
             
-            Slider(value: $blurAmount, in: 0...20)
-                .onChange(of: blurAmount) { newValue in
-                    print("New value is \(blurAmount)")
-                }
-            
-            Button("Random Blur") {
-                blurAmount = Double.random(in: 0...20)
+            Button("Select Image") {
+                showingImagePicker = true
             }
         }
+        .sheet(isPresented: $showingImagePicker) {
+            ImagePicker(image: $inputImage)
+        }
+        .onChange(of: inputImage) {
+            loadImage()
+        }
+    }
+    
+    func loadImage() {
+        guard let inputImage = inputImage else { return }
+        image = Image(uiImage: inputImage)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }
