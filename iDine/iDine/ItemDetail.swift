@@ -10,6 +10,7 @@ import SwiftUI
 struct ItemDetail: View {
     let item: MenuItem
     @EnvironmentObject var order: Order
+    @State private var starImage = "star"
     
     var body: some View {
         VStack {
@@ -32,11 +33,24 @@ struct ItemDetail: View {
                 order.add(item: item)
             }
             .buttonStyle(.borderedProminent)
+            .tint(.purple)
+            .font(.custom("Georgia", size: 20))
             
             Spacer()
         }
         .navigationTitle(item.name)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            Button("Add to Favorites", systemImage: starImage) {
+                if starImage == "star" {
+                    starImage = "star.fill"
+                } else {
+                    starImage = "star"
+                }
+            }
+            .tint(.yellow)
+            .animation(.default, value: starImage)
+        }
     }
 }
 
