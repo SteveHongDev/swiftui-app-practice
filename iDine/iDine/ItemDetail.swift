@@ -10,6 +10,7 @@ import SwiftUI
 struct ItemDetail: View {
     let item: MenuItem
     @EnvironmentObject var order: Order
+    @EnvironmentObject var favorites: Favorites
     @State private var starImage = "star"
     
     var body: some View {
@@ -44,16 +45,23 @@ struct ItemDetail: View {
             Button("Add to Favorites", systemImage: starImage) {
                 if starImage == "star" {
                     starImage = "star.fill"
+                    favorites.add(item: item)
                 } else {
                     starImage = "star"
+                    favorites.remove(item: item)
                 }
             }
             .tint(.yellow)
             .animation(.default, value: starImage)
+            .onAppear {
+                if favorites.items.contains(item) {
+                    starImage = "star.fill"
+                }
+            }
         }
     }
 }
 
-#Preview {
-    ItemDetail(item: MenuItem.example)
-}
+//#Preview {
+//    ItemDetail(item: MenuItem.example)
+//}
